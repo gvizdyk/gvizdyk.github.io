@@ -11,7 +11,7 @@ description: > # this means to ignore newlines until "baseurl:"
   І хоч уже років з 15 :) тато мені нічого не читав, все ж далі продовжую захоплюватись цікавими історіями
   про мандрівки. Звичайно, до Джека Лондона мені ще далеко :), проте запрошую вас в мої життєві мандри...
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://gvizdyk.github.io" # the base hostname & protocol for your site
+url: "http://gvizdyk.org.ua" # the base hostname & protocol for your site
 # twitter_username: gvizdyk
 # github_username:  gvizdyk
 permalink: /:year/:month/:title.html
