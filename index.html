@@ -1,0 +1,70 @@
+---
+layout: frontpage
+---
+
+{% include pagination.html %}
+
+<div class="blog-posts">
+  {% for post in paginator.posts %}
+  <div class="post-item">
+    <div class="container">
+      <h2 class="post-title">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+      <div class="post-date">
+        {% assign m = post.date | date: "%-m" %}
+        {{ post.date | date: "%-d" }}
+        {% case m %}
+          {% when '1' %}Січня
+          {% when '2' %}Лютого
+          {% when '3' %}Березня
+          {% when '4' %}Квітня
+          {% when '5' %}Травня
+          {% when '6' %}Червня
+          {% when '7' %}Липня
+          {% when '8' %}Серпня
+          {% when '9' %}Вересня
+          {% when '10' %}Жовтня
+          {% when '11' %}Листопада
+          {% when '12' %}Грудня
+        {% endcase %}
+        {{ post.date | date: "%Y" }} р.
+      </div>
+      <ul class="post-tags">
+        {% assign post = page %}
+        {% if post.tags.size > 0 %}
+            {% capture tags_content %}{% endcapture %}
+            {% for post_tag in post.tags %}
+                {% for data_tag in site.data.tags %}
+                    {% if data_tag.slug == post_tag %}
+                        {% assign tag = data_tag %}
+                    {% endif %}
+                {% endfor %}
+                {% if tag %}
+                    {% capture tags_content_temp %}
+                      {{ tags_content }}
+                      <li><a href="/tag/{{ tag.slug }}.html">{{ tag.name }}</a></li>
+                    {% endcapture %}
+                    {% assign tags_content = tags_content_temp %}
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            {% assign tags_content = '' %}
+        {% endif %}
+
+        {{ tags_content }}
+      </ul>
+
+      {% if post.desc_1 %}<p>{{ post.desc_1 }}</p>{% endif %}
+      {% if post.desc_2 %}<p>{{ post.desc_2 }}</p>{% endif %}
+      {% if post.desc_img %}<p><img class="responsive" src="{{ post.desc_img }}"/></p>{% endif %}
+      {% if post.desc_3 %}<p>{{ post.desc_3 }}</p>{% endif %}
+
+      <div class="link-more">
+        <a class="btn btn-link-more" href="{{ post.url | prepend: site.baseurl }}">Читати</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% include pagination.html %}

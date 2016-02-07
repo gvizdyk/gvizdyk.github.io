@@ -1,0 +1,86 @@
+- slug: jekyll
+  name: Jekyll
+
+- slug: velosyped
+  name: Велосипед
+
+- slug: velomandrivky
+  name: Веломандрівки
+
+- slug: mandrivky
+  name: Мандрівки
+
+- slug: marshrut
+  name: Маршрут
+
+- slug: sport
+  name: Спорт
+
+- slug: zmagannja
+  name: Змагання
+
+- slug: big
+  name: Біг
+
+- slug: evening_jog
+  name: Evening jog, Вечірні побігеньки
+
+- slug: night_madness
+  name: Night Madness
+
+- slug: stegky_gerojiv
+  name: Стежками Героїв
+
+- slug: osinnij_rejd
+  name: Осінній рейд
+
+- slug: vylky
+  name: Вульки
+
+- slug: serfing
+  name: Серфінг
+
+- slug: zvit
+  name: Звіт
+
+- slug: bulby
+  name: Бульби
+
+- slug: plast
+  name: Пласт
+
+- slug: fotografiji
+  name: Фотографії
+
+- slug: majsterka
+  name: Майстерка
+
+- slug: modelism
+  name: Моделізм
+
+- slug: dovidkovi_materialy
+  name: Довідковий матеріал
+
+- slug: korysni_instrumenty
+  name: Корисні інструменти
+
+- slug: korysni_resursy
+  name: Корисні ресурси
+
+- slug: linux
+  name: Linux
+
+- slug: nalashtyvannja
+  name: Налаштування
+
+- slug: filmy
+  name: Фільм
+
+- slug: quintagroup
+  name: Quinta Group
+
+- slug: videorolyk
+  name: Відеоролик
+
+- slug: motyvator
+  name: Мотиватор

@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+{% assign post = page %}
+
+<div class="container">
+  <article itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 itemprop="headline">{{ page.title }}</h1>
+      <p class="post-date">
+        <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">
+          {% assign m = post.date | date: "%-m" %}
+          {{ post.date | date: "%-d" }}
+          {% case m %}
+            {% when '1' %}Січня
+            {% when '2' %}Лютого
+            {% when '3' %}Березня
+            {% when '4' %}Квітня
+            {% when '5' %}Травня
+            {% when '6' %}Червня
+            {% when '7' %}Липня
+            {% when '8' %}Серпня
+            {% when '9' %}Вересня
+            {% when '10' %}Жовтня
+            {% when '11' %}Листопада
+            {% when '12' %}Грудня
+          {% endcase %}
+          {{ post.date | date: "%Y" }} р.
+        </time>
+      </p>
+    </header>
+    {{ content }}
+    <footer>
+      <ul class="post-tags">
+        {% if post.tags.size > 0 %}
+            {% for post_tag in post.tags %}
+                {% for data_tag in site.data.tags %}
+                    {% if data_tag.slug == post_tag %}
+                        {% assign tag = data_tag %}
+                    {% endif %}
+                {% endfor %}
+                {% if tag %}
+                    {% capture tags_content_temp %}
+                        {{ tags_content }}
+                        <li><a href="/tag/{{ tag.slug }}.html">{{ tag.name }}</a></li>
+                    {% endcapture %}
+                    {% assign tags_content = tags_content_temp %}
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            {% assign tags_content = '' %}
+        {% endif %}
+
+        <li>Мітки:</li> {{ tags_content }}
+      </ul>
+    </footer>
+  </article>
+</div>

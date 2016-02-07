@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="frontpage">
+    <header id="header">
+      <div class="container">
+        <h1 class="blog-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+        <img class="blog-logo" src="/images/logo.png" />
+        <p class="description">{{ site.description }}</p>
+        <ul  class="tags-cloud">
+          {% for tag in site.tags %}
+          {% assign t = tag | first %}
+            {% for atag in site.data.tags %}
+              {% if atag.slug == t %}
+                <li class="tag-size-{{ tag | last | size }}"><a href="/tag/{{ atag.slug }}.html">{{ atag.name }}
+              {% endif %}
+            {% endfor %}
+                ({{ tag | last | size }})
+               </a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </header>
+    <section>
+      {{ content }}
+    </section>
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,23 @@
+# Jykell configuration
+markdown: kramdown
+paginate: 5
+
+# Site settings
+title: Блог Гвіздика
+email: gvizdyk@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Ще змалку любив, коли тато читав мені оповіді про мандрівників та шукачів пригод.
+  Слухаючи ці розповіді, мимоволі сам переносився у події і разом з героями переживав їхні пригоди.
+  І хоч уже років з 15 :) тато мені нічого не читав, все ж далі продовжую захоплюватись цікавими історіями
+  про мандрівки. Звичайно, до Джека Лондона мені ще далеко :), проте запрошую вас в мої життєві мандри...
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://gvizdyk.github.io/" # the base hostname & protocol for your site
+# twitter_username: gvizdyk
+# github_username:  gvizdyk
+permalink: /:year/:month/:title.html
+
+timezone: Europe/Kiev
+
+
+# gems and other configs
+gems: [jekyll-paginate]
