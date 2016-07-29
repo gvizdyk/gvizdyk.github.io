@@ -9,8 +9,9 @@ desc_2:
 desc_3:
 meta_img: https://upload.wikimedia.org/wikipedia/en/b/ba/Losing_My_Virginity.jpg
 ---
-
-<img src='https://upload.wikimedia.org/wikipedia/en/b/ba/Losing_My_Virginity.jpg' alt='Losing My Virginity' width='300' style="margin-left:auto;margin-right:auto;" />
+<p style='text-align:center'>
+  <img src='https://upload.wikimedia.org/wikipedia/en/b/ba/Losing_My_Virginity.jpg' alt='Losing My Virginity' style="margin-left:0;margin-right:0;width:auto;" />
+</p>
 
 За рекомендацією Володі Черепаняка прочитав цікаву книжку "<a href='https://en.wikipedia.org/wiki/Losing_My_Virginity' title='Losing My Virginity'>Losing My Virginity</a>" написану Річардом Бренсоном про <a href='https://goo.gl/PSw17V' title='Річарда Бренсона'>Річарда Бренсона</a> :) Початок книжки мені видався трохи затягнутим, проте від решти книги не міг відірватись.
 
