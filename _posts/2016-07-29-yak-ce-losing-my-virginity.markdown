@@ -4,11 +4,13 @@ title:  "Як це 'Losing My Virginity'"
 date:   2016-07-29 19:50:16
 tags: motyvator
 meta_desc_1:
-desc_1: "<p><img src='https://upload.wikimedia.org/wikipedia/en/b/ba/Losing_My_Virginity.jpg' alt='Losing My Virginity' /></p><p>Класна книга 'Losing My Virginity' написана Річардом Бренсоном про себе, окрім цього містить багато захоплючих історій про створення імперії Virgin Group, про музику, ходіння на повітряних кулях і яхтингу.</p>"
+desc_1: "<p style='float:left;margin-right:32px;'><img src='https://upload.wikimedia.org/wikipedia/en/b/ba/Losing_My_Virginity.jpg' alt='Losing My Virginity' height="350" /></p><p>Класна книга 'Losing My Virginity' написана Річардом Бренсоном про себе, окрім цього містить багато захоплючих історій про створення імперії Virgin Group, про музику, ходіння на повітряних кулях і яхтингу.</p><p style="clear:both;"></p>"
 desc_2:
 desc_3:
 meta_img: https://upload.wikimedia.org/wikipedia/en/b/ba/Losing_My_Virginity.jpg
 ---
+
+<img src='https://upload.wikimedia.org/wikipedia/en/b/ba/Losing_My_Virginity.jpg' alt='Losing My Virginity' />
 
 За рекомендацією Володі Черепаняка прочитав цікаву книжку "<a href='https://en.wikipedia.org/wiki/Losing_My_Virginity' title='Losing My Virginity'>Losing My Virginity</a>" написану Річардом Бренсоном про <a href='https://goo.gl/PSw17V' title='Річарда Бренсона'>Річарда Бренсона</a> :) Початок книжки мені видався трохи затягнутим, проте від решти книги не міг відірватись.
 
