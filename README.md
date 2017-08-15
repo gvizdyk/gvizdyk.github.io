@@ -1,4 +1,4 @@
-# Blog site "Блог Гвіздика": [http://gvizdyk.org.ua](http://gvizdyk.org.ua)
+# Blog site "Блог Гвіздика": [http://gvizdyk.github.io](http://gvizdyk.github.io)
 
 [![Build Status](https://travis-ci.org/gvizdyk/gvizdyk.github.io.svg?branch=master)](https://travis-ci.org/gvizdyk/gvizdyk.github.io)
 
